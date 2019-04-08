@@ -48,8 +48,6 @@ public class kalkulator extends javax.swing.JFrame {
         angka_9 = new javax.swing.JButton();
         angka_8 = new javax.swing.JButton();
         op_c = new javax.swing.JButton();
-        op_hapus = new javax.swing.JButton();
-        op_min = new javax.swing.JButton();
         hasil = new javax.swing.JTextField();
         operasi = new javax.swing.JLabel();
 
@@ -198,22 +196,6 @@ public class kalkulator extends javax.swing.JFrame {
             }
         });
 
-        op_hapus.setFont(new java.awt.Font("Ubuntu", 0, 15)); // NOI18N
-        op_hapus.setText("<--");
-        op_hapus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                op_hapusActionPerformed(evt);
-            }
-        });
-
-        op_min.setFont(new java.awt.Font("Ubuntu", 0, 15)); // NOI18N
-        op_min.setText("+/-");
-        op_min.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                op_minActionPerformed(evt);
-            }
-        });
-
         hasil.setEditable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -249,12 +231,7 @@ public class kalkulator extends javax.swing.JFrame {
                                 .addComponent(angka_8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(angka_9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(op_c, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(op_min, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(op_hapus, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(op_c, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(op_samadengan, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -277,11 +254,7 @@ public class kalkulator extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(op_bagi, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(op_c, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(op_min, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(op_hapus, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(op_c, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -488,14 +461,6 @@ public class kalkulator extends javax.swing.JFrame {
         bilangan="";
     }//GEN-LAST:event_op_cActionPerformed
 
-    private void op_hapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_op_hapusActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_op_hapusActionPerformed
-
-    private void op_minActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_op_minActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_op_minActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -546,10 +511,8 @@ public class kalkulator extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton op_bagi;
     private javax.swing.JButton op_c;
-    private javax.swing.JButton op_hapus;
     private javax.swing.JButton op_kali;
     private javax.swing.JButton op_kurang;
-    private javax.swing.JButton op_min;
     private javax.swing.JButton op_samadengan;
     private javax.swing.JButton op_tambah;
     private javax.swing.JButton op_titik;

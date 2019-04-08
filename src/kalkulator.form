@@ -58,13 +58,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="angka_9" min="-2" pref="60" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="op_c" min="-2" pref="60" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="op_min" min="-2" pref="60" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="op_hapus" min="-2" pref="60" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="op_c" alignment="1" min="-2" pref="192" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -94,13 +88,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="op_bagi" min="-2" pref="48" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                          <Component id="op_c" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
-                          <Component id="op_min" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="op_hapus" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="op_c" min="-2" pref="48" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -406,28 +394,6 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="op_cActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="op_hapus">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Ubuntu" size="15" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="&lt;--"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="op_hapusActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="op_min">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Ubuntu" size="15" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="+/-"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="op_minActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="hasil">
